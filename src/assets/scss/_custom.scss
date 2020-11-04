@@ -1,0 +1,154 @@
+// Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9d9d9d;
+}
+
+// Table
+.table.nowrap th,
+.table.nowrap td {
+    white-space: nowrap;
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.splitpanes__pane > div {
+    height: 100%;
+    overflow: auto;
+}
+
+.table-responsive {
+    height: 100%;
+}
+
+// Nav
+.nav-tabs .nav-link {
+    height: 100%;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+// Subheader
+.c-subheader {
+    min-height: 45px;
+}
+
+// Menu
+.menu {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.menu .nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    min-width: 30%;
+    height: 100%;
+}
+
+.menu ::-webkit-scrollbar {
+    display: none;
+}
+
+.menu .btn:focus,
+.menu .btn.focus {
+    box-shadow: none;
+}
+
+// Form
+form.size-sm .form-group {
+    margin-bottom: 0;
+}
+
+form.size-sm .form-group > label {
+    margin-bottom: 0;
+}
+
+// Treeselect
+div.vue-treeselect__control {
+    height: calc(1.5em + 0.5rem + 2px);
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: 100px;
+}
+
+div.vue-treeselect__control .vue-treeselect__single-value,
+div.vue-treeselect__menu .vue-treeselect__label {
+    line-height: 1.5;
+    font-weight: 400;
+    color: #768192;
+    margin: 0;
+    font-family: inherit;
+    height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.3rem 0.5rem;
+    font-size: 0.76563rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+div.vue-treeselect__menu {
+    min-width: 300px;
+}
+
+.row > .form-group {
+    margin-bottom: 0;
+}
+
+// More
+.line-left {
+    border-left: 1px solid #d8dbe0;
+}
+
+.tab-content .hidden-in-tab-content {
+    visibility: hidden;
+}
+.table{
+    position: relative;
+    width: 100%;
+}
+.table thead{
+    position: -webkit-sticky;
+    /* position: sticky; */
+    /* top: 0; */
+    /* padding: 5px; */
+    background-color: white;
+    /* border: 2px solid #4CAF50; */
+    position: fixed;
+    display: block;
+    /* width: 100%; */
+    /* width: 169px; */
+    z-index: 100;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+.table tbody{
+    cursor: pointer;
+    position: absolute !important;
+    /* overflow: scroll; */
+    display: table;
+    top: 80px;
+    /* padding-top: 200px; */
+    /* margin-top: 200px; */
+    width: 100%;
+}
+  
+.table.nowrap th, .table.nowrap td {
+    white-space: nowrap;
+    width: 18% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  

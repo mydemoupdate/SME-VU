@@ -1,0 +1,4 @@
+// USA
+export const locale = {
+  
+};
